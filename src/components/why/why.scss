@@ -1,0 +1,36 @@
+.why{
+    margin-top: 7.5rem;
+
+    &__description{
+        font-family: "mRegular";
+        margin-top: 3.3rem;
+        line-height: 1.8rem;
+    }
+    &__card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 3.1875rem;
+        .item{
+            &__svg{
+                width: 4.875rem;
+                height: 4.875rem;
+            }
+            &__text{
+                margin-top: 2rem;
+                .text__title{
+                    font-family: "mBold";
+                    font-size: 1.25rem;
+                }
+                .text__desc{
+                    font-family: "mRegular";
+                    margin-top: .625rem;
+                    line-height: 1.875rem;
+                    .li__year{
+                        font-family: "mSemiBold";
+                        color: $ligthRed;
+                    }
+                }
+            }
+        }
+    }
+}

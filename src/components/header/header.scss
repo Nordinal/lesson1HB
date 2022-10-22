@@ -1,1 +1,138 @@
+.header{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    width: 111.5625rem;
+    max-width: 100%;
+    margin: 1.625rem auto;
+
+    &__nav{
+        .nav{
+
+            &__burger{
+                margin: 0 0.9375rem; 
+            }
+            &__item{
+                margin: 0 0.9375rem; 
+            }
+        }
+    }
+
+    &__control{
+        .control__item{
+            padding: 1rem;
+            margin: 0 0.5rem;
+            border: 1px solid $gray;
+            border-radius: 100%;
+        }
+    }
+
+    &__social{
+        .social__item{
+            margin: 0 0.5rem;
+        }
+    }
+
+    &__telephone{
+        .telephone__number{
+            margin: 0 2.1875rem 0 5rem;
+        }
+        .telephone__callme{
+            margin: 0 2.1875rem;
+        }
+    }
+
+}
+
+.logo{
+    &__img{
+        width: 6.25rem;
+        height: 6.06rem;
+    }
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+
+    &__item{
+        color: $blue;
+        text-decoration: none;
+        font-family: "mBold";
+    }
+
+    &__burger{
+        .burger__svg{
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+}
+
+.telephone{
+    display: flex;
+    align-items: center;
+
+    &__number{  
+        text-decoration: none;
+        color: $blue;
+
+        .number__light{
+            font-family: "mRegular";
+        }
+        .number__normal{
+            color: black;
+            font-family: "mBold";
+        }
+    }
+
+    &__callme{
+        .callme__item{
+            font-size: 0.875rem;
+            color: $red;
+            font-family: "mBold";
+            border-bottom: 1px dashed $red;
+        }
+    }
+}
+
+
+.social{
+    &__item{
+        text-decoration: none;
+        .item__svg{
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+    }
+}
+
+.control{
+    display: flex;
+    &__item{
+        width: 1.25rem;
+        height: 1.25rem;
+        .item__svg{
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+    }
+}
+
+.notification{
+    position: relative;
+
+    &__item{
+        color: white;
+        position: absolute;
+        right: -.3rem;
+        top: 0;
+        font-family: "mBold";
+        font-size: 0.7rem;
+        background-color: $ligthRed;
+        border: 1px solid $ligthRed;
+        border-radius: 100%;
+        padding: .25rem;
+    }
+}

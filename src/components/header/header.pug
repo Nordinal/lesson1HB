@@ -1,0 +1,42 @@
+include ../../views/helpers/mixins.pug
+
+header.header
+
+    .header__logo.logo
+        img.logo__img(src="./assets/images/logo.png")
+
+    nav.header__nav.nav
+        span.nav__burger
+            +svg("burgerMenu", "burger__svg")
+        a.nav__item(href="#") КАТАЛОГ ТОВАРОВ
+        a.nav__item(href="#") ДОСТАВКА И ОПЛАТА
+        a.nav__item(href="#") ЦЕНЫ
+        a.nav__item(href="#") КОНТАКТЫ
+
+    .header__telephone.telephone
+        a.telephone__number(href="tel:+78125092198")
+            span.number__light +7 (812) 
+            span.number__normal 509 21 98
+
+        .telephone__callme.callme
+            span.callme__item ПЕРЕЗВОНИТЕ МНЕ
+
+
+    section.header__social.social
+        a.social__item(href="#vk")
+            +svg('vk', "item__svg")
+        a.social__item(href="#tg")
+            +svg('telegram', "item__svg")
+        a.social__item(href="#ig")
+            +svg('instagram', "item__svg")
+        a.social__item(href="#wa")
+            +svg('whatsapp', "item__svg")
+    
+    section.header__control.control
+        .control__item 
+            +svg("loupe", "item__svg")
+        .control__item 
+            +svg("like", "item__svg")
+        .control__item.notification
+            .notification__item 10
+            +svg("cart", "item__svg")
