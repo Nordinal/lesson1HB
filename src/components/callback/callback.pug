@@ -1,0 +1,24 @@
+
+
+
+section.callback
+    h3.callback__title НЕОБХОДИМА КОНСТУЛЬТАЦИЯ?
+    .callback__desc оставьте заявку или свяжитесь с нами в социальных сетях
+
+    section.callback__social-form.social-form
+        a.social-form__item(href="#vk")
+            +svg('vk-form', "item__svg")
+        a.social-form__item(href="#tg")
+            +svg('telegram-form', "item__svg")
+        a.social-form__item(href="#ig")
+            +svg('instagram-form', "item__svg")
+        a.social-form__item(href="#wa")
+            +svg('whatsapp-form', "item__svg")
+
+    form.callback__form
+        .form__title Для <span class="title__accent">консультации</span> заполните форму!
+        .form__desc С Вами свяжутся в ближайшее время
+        .form__action 
+            input(type="text", name="", placeholder="Ваше имя")
+            input(type="text", name="", placeholder="Ваш телефон")
+            button отправить

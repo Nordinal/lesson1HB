@@ -1,0 +1,66 @@
+.callback{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        font-size: 3.03rem;
+        font-family: "mExtraBold";
+        margin: 0;
+    }
+    &__desc{
+        font-family: "mLigth";
+        font-size: 1.375rem;
+    }
+    &__social-form{
+        margin-top: 2.7rem;
+        .social-form__item {
+            text-decoration: none;
+            margin: 0 1.125rem;
+            .item__svg{
+                width: 1.4375rem;
+                height: 1.4375rem;
+            }
+        }
+    }
+    &__form{
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+        padding: 3.75rem;
+        margin-top: 2.5rem;
+
+        .form{
+            &__title{
+                font-size: 1.25rem;
+                font-family: "mMedium";
+                .title__accent{
+                    font-family: 'mBold';
+                    color: $orange;
+                }
+            }
+
+            &__desc {
+                font-family: "mRegular";
+                padding: .75rem 0 1.375rem 0;
+            }
+
+            &__action input{
+                padding: 1.15rem;
+                border: 1px solid $gray;
+                border-radius: .25rem;
+                width: 12rem;
+                font-family: "mMedium";
+                font-size: .875rem;
+                margin-right: 1rem;
+            }
+            &__action button{
+                width: 15rem;
+                height: 3.5rem;
+                border: none;
+                background-color: $darkBlue;
+                font-family: "mBold";
+                border-radius: .25rem;
+                color: white;
+            }
+        }
+    }
+}

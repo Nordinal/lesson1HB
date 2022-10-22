@@ -1,0 +1,24 @@
+.video{
+    &__title-section{
+        margin-top: 8rem;
+    }
+    
+    &__form{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: 6.25rem;
+        .form__svg{
+            position: absolute;
+            width: 72.25rem;
+            height: 25.375rem;
+            z-index: -1;
+            top: -3.5rem;
+        }
+    }
+}
+.section-desc{
+    font-family: "mRegular";
+    line-height: 1.875rem;
+    margin-top: 4.3rem;
+}
