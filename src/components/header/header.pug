@@ -6,8 +6,13 @@ header.header
         img.logo__img(src="./assets/images/logo.png")
 
     nav.header__nav.nav
-        span.nav__burger
+        span(id="burger").nav__burger
             +svg("burgerMenu", "burger__svg")
+            div(id="burgerOpen").burger__menu.disable
+                a.nav__item(href="#") КАТАЛОГ ТОВАРОВ
+                a.nav__item(href="#") ДОСТАВКА И ОПЛАТА
+                a.nav__item(href="#") ЦЕНЫ
+                a.nav__item(href="#") КОНТАКТЫ
         a.nav__item(href="#") КАТАЛОГ ТОВАРОВ
         a.nav__item(href="#") ДОСТАВКА И ОПЛАТА
         a.nav__item(href="#") ЦЕНЫ
@@ -19,7 +24,7 @@ header.header
             span.number__normal 509 21 98
 
         .telephone__callme.callme
-            span.callme__item ПЕРЕЗВОНИТЕ МНЕ
+            a(href="#callback").callme__item ПЕРЕЗВОНИТЕ МНЕ
 
 
     section.header__social.social

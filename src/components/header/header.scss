@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
 
-    width: 111.5625rem;
-    max-width: 100%;
+    max-width: 111.5625rem;
+    width: 100%;
     margin: 1.625rem auto;
 
     &__nav{
@@ -60,12 +60,36 @@
         color: $blue;
         text-decoration: none;
         font-family: "mBold";
+        transition: color .2s linear;
+        &:hover{
+            color: $darkBlue;
+        }
     }
 
     &__burger{
+        position: relative;
         .burger__svg{
             width: 3.5rem;
             height: 3.5rem;
+            border-radius: 100%;
+            cursor: pointer;
+            transition: background .2s linear;
+            &:hover{
+                background: $darkBlue;
+            }
+        }
+        .burger__menu{
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 0 .5rem rgba(0,0,0,.2);
+            background-color: white;
+            .nav__item{
+                padding: 1rem;
+            }
+        }
+        .disable{
+            display: none;
         }
     }
 }
@@ -93,6 +117,11 @@
             color: $red;
             font-family: "mBold";
             border-bottom: 1px dashed $red;
+            text-decoration: none;
+            transition: color .2s linear;
+            &:hover{
+                color: $ligthRed;
+            }
         }
     }
 }
@@ -113,9 +142,14 @@
     &__item{
         width: 1.25rem;
         height: 1.25rem;
+        cursor: pointer;
+        transition: background .2s linear;
         .item__svg{
             width: 1.25rem;
             height: 1.25rem;
+        }
+        &:hover{
+            background-color: $gray;
         }
     }
 }
