@@ -5,17 +5,24 @@ const loading = document.querySelector('.loading')
 
 
 btn.onclick = () => {
-    console.log(loading)
-    btn.classList.add('disabledBtn')
-    loading.classList.remove('disabledLoading')
-    setTimeout(() => {
-        console.log(name.value)
-        notification.classList.remove("disabled")
-        notification.innerHTML = `${name.value}, ваша заявка принята, мы вам позвоним на номер ${tel.value}`
+    if(name.value.trim() && tel.value.trim()){
+        btn.classList.add('disabledBtn')
+        loading.classList.remove('disabledLoading')
         setTimeout(() => {
-            notification.classList.add("disabled")
-        }, 5000)
-        btn.classList.remove('disabledBtn')
-        loading.classList.add('disabledLoading')
-    }, 2000)
+            notification.classList.remove("disabled")
+            notification.innerHTML = `${name.value}, ваша заявка принята, мы вам позвоним на номер ${tel.value}`
+            setTimeout(() => {
+                notification.classList.add("disabled")
+            }, 5000)
+            btn.classList.remove('disabledBtn')
+            loading.classList.add('disabledLoading')
+        }, 3000)
+    }
+    else{
+        notification.classList.remove("disabled")
+            notification.innerHTML = `Поля для ввода не должны быть пустыми`
+            setTimeout(() => {
+                notification.classList.add("disabled")
+            }, 5000)
+    }
 }
