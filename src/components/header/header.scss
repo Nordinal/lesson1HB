@@ -23,7 +23,7 @@
         .control__item{
             padding: 1rem;
             margin: 0 0.5rem;
-            border: 1px solid $gray;
+            border: .06rem solid $gray;
             border-radius: 100%;
         }
     }
@@ -116,7 +116,7 @@
             font-size: 0.875rem;
             color: $red;
             font-family: "mBold";
-            border-bottom: 1px dashed $red;
+            border-bottom: .06rem dashed $red;
             text-decoration: none;
             transition: color .2s linear;
             &:hover{
@@ -165,8 +165,46 @@
         font-family: "mBold";
         font-size: 0.7rem;
         background-color: $ligthRed;
-        border: 1px solid $ligthRed;
+        border: .06rem solid $ligthRed;
         border-radius: 100%;
         padding: .25rem;
+    }
+}
+
+@media (max-width: 768px){
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        &__control{
+            grid-column-start: 3;
+            grid-row-start: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        &__nav{
+            grid-column-start: 4;
+            > .nav__item{
+                display: none;
+            }
+        }
+        &__telephone{
+            display: none;
+        }
+        &__social{
+            display: none;
+        }
+        .burger__menu{
+            right: 0;
+            margin-top: 1rem;
+        }
+    }
+}
+@media (max-width: 320px){
+    .control__item:not(:last-child){
+        display: none;
+    }
+    .header{
+        padding-bottom: 1rem;
+        border-bottom: .06rem solid $gray;
     }
 }

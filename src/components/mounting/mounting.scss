@@ -2,9 +2,11 @@
     margin-top: 7.4rem;
     &__card{
         display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         row-gap: .625rem;
         margin-top: 3.5rem;
+        grid-auto-flow: column;
         .card__item{
             display: flex;
             align-items: center;
@@ -37,5 +39,15 @@
         background-color: $ligthRed;
         top: -1.1rem;
         left: 0;
+    }
+}
+
+@media (max-width: 320px){
+    .mounting__card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .title-section{
+        font-size: 1.25rem;
     }
 }

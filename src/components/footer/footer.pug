@@ -23,22 +23,23 @@ footer.content
                 a(href="#").card__item Отзывы
                 a(href="#").card__item Оплата и доставка
                 a(href="#").card__item Ликвидация товара
-        .footer__block 
-            h3.card__title ВРЕМЯ РАБОТЫ
-            .block__time 
-                +svg("clock", "time__clock")
-                span.time__date пн-пт <span class="time__hours">9:00 – 20:00</span>    сб-вс <span class="time__hours">9:00 – 20:00</span>
-            
-            .block__adress
-                +svg("placeholder", "adress__svg")
-                span.adress__adress г. Санкт - Петербург, ул. Тамбасова д.7
-
-            section.block__social.social
-                a.social__item(href="#vk")
-                    +svg('vk', "item__svg")
-                a.social__item(href="#tg")
-                    +svg('telegram', "item__svg")
-                a.social__item(href="#ig")
-                    +svg('instagram', "item__svg")
-                a.social__item(href="#wa")
-                    +svg('whatsapp', "item__svg")
+        .footer__info
+            .info__text 
+                h3.card__title ВРЕМЯ РАБОТЫ
+                .block__time 
+                    +svg("clock", "time__clock")
+                    span.time__date пн-пт <span class="time__hours">9:00 – 20:00</span>    сб-вс <span class="time__hours">9:00 – 20:00</span>
+                
+                .block__adress
+                    +svg("placeholder", "adress__svg")
+                    span.adress__adress г. Санкт - Петербург, ул. Тамбасова д.7
+            .info__social
+                section.block__social.social
+                    a.social__item(href="#vk")
+                        +svg('vk', "item__svg")
+                    a.social__item(href="#tg")
+                        +svg('telegram', "item__svg")
+                    a.social__item(href="#ig")
+                        +svg('instagram', "item__svg")
+                    a.social__item(href="#wa")
+                        +svg('whatsapp', "item__svg")

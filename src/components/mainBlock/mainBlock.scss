@@ -45,8 +45,8 @@
 }
 .breadcrumb{
     padding: .875rem 0;
-    border-top: 1px solid $gray;
-    border-bottom: 1px solid $gray;
+    border-top: .06rem solid $gray;
+    border-bottom: .06rem solid $gray;
 
     &__item{
         font-family: "mRegular";
@@ -120,7 +120,21 @@
             .label__img{
                 display: none;
             }
+            .label__text{
+                max-width: 100%;
+            }
         }
     
+    }
+}
+@media (max-width: 320px){
+    .main-block__title{
+        font-size: 1.875rem;
+    }
+    .text__title{
+        font-size: 1.125rem !important;
+    }
+    .text__title-accent{
+        font-size: 1.875rem !important;
     }
 }
