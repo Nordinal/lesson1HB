@@ -42,10 +42,10 @@
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 415px){
     .mounting__card{
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-wrap: wrap;
     }
     .title-section{
         font-size: 1.25rem;
